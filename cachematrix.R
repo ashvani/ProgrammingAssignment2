@@ -13,6 +13,8 @@
 # function setInverse caches inverese of matrix using operator <<-.
 # function getInverse returns inverse of matrix.
 
+ # BEGINNING OF R PROGRAM #
+
 makeCacheMatrix <- function(x = matrix()) {
         Result <- NULL
         set<- function(y){
