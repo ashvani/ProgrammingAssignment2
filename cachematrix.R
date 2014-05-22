@@ -5,7 +5,9 @@
 ###         List <- makeCacheMatrix(x)
 ###         cacheSolve(List)
 ###}
-### now call mySolve(x)
+### To test the program compile the above script and then run the following two lines
+###  1. X <- matrix(c(12, 20, 45, 11), 2, 2)
+###  2. mySolve(X)
 
 # function makeCacheMatrix returns a list of four functions namely set, get, setInverse, getInverse.
 # function set caches matrix using assingment operator <<-.
@@ -23,7 +25,7 @@ makeCacheMatrix <- function(x = matrix()) {
         }                       
         get <- function() x  # function get returns input matrix
         setInverse <- function(Inverse)
-                Result <<- Inverse  # function setInverse sets inverse of matrix in variable Result
+                Result <<- Inverse  # function setInverse sets inverse of matrix in object Result
         getInverse <- function() Result
         list(set = set, get = get, setInverse = setInverse, getInverse = getInverse)
        # function makeCacheMatrix returns a list having four above functions 
